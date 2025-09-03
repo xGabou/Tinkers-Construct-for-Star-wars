@@ -1,6 +1,6 @@
 {
   "type": "tconstruct:modifier_salvage",
-  "modifier": "tconstruct:spitting",
+  "modifier": "tconstruct:returning",
   "slots": {
     "abilities": 1
   },

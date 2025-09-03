@@ -1,8 +1,18 @@
 {
-  "type": "tconstruct:modifier_salvage",
-  "modifier": "tconstruct:spitting",
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "inputs": [
+    {
+      "item": "minecraft:clock"
+    }
+  ],
+  "level": {
+    "max": 4,
+    "min": 2
+  },
+  "result": "tconstruct:returning",
   "slots": {
-    "abilities": 1
+    "upgrades": 1
   },
   "tools": {
     "type": "forge:intersection",

@@ -1,6 +1,14 @@
 {
-  "type": "tconstruct:modifier_salvage",
-  "modifier": "tconstruct:spitting",
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "check_trait_level": true,
+  "inputs": [
+    {
+      "item": "minecraft:totem_of_undying"
+    }
+  ],
+  "level": 1,
+  "result": "tconstruct:returning",
   "slots": {
     "abilities": 1
   },

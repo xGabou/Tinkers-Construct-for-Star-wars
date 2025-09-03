@@ -1,8 +1,11 @@
 {
   "type": "tconstruct:modifier_salvage",
-  "modifier": "tconstruct:spitting",
+  "level": {
+    "min": 2
+  },
+  "modifier": "tconstruct:returning",
   "slots": {
-    "abilities": 1
+    "upgrades": 1
   },
   "tools": {
     "type": "forge:intersection",
