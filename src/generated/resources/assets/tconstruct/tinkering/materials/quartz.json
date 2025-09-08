@@ -1,11 +1,11 @@
 {
-  "color": "FF349988",
+  "color": "FFEAE5DE",
   "fallbacks": [
+    "crystal",
     "rock"
   ],
   "generator": {
     "supported_stats": [
-      "tconstruct:repair_kit",
       "tconstruct:arrow_head"
     ],
     "transformer": {
@@ -18,27 +18,27 @@
             "grey": 0
           },
           {
-            "color": "FF032620",
+            "color": "FF6F5D5A",
             "grey": 63
           },
           {
-            "color": "FF0C3730",
+            "color": "FF897B73",
             "grey": 102
           },
           {
-            "color": "FF0B4D42",
+            "color": "FFB6A48E",
             "grey": 140
           },
           {
-            "color": "FF105E51",
+            "color": "FFD4CABA",
             "grey": 178
           },
           {
-            "color": "FF349988",
+            "color": "FFEAE5DE",
             "grey": 216
           },
           {
-            "color": "FF8CF4E2",
+            "color": "FFF7F5F2",
             "grey": 255
           }
         ]

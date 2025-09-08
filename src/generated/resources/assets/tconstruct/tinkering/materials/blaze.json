@@ -1,12 +1,8 @@
 {
-  "color": "FF349988",
-  "fallbacks": [
-    "rock"
-  ],
+  "color": "FFFFC100",
   "generator": {
     "supported_stats": [
-      "tconstruct:repair_kit",
-      "tconstruct:arrow_head"
+      "tconstruct:arrow_shaft"
     ],
     "transformer": {
       "type": "tconstruct:recolor_sprite",
@@ -18,27 +14,27 @@
             "grey": 0
           },
           {
-            "color": "FF032620",
+            "color": "FF953300",
             "grey": 63
           },
           {
-            "color": "FF0C3730",
+            "color": "FFAE3C00",
             "grey": 102
           },
           {
-            "color": "FF0B4D42",
+            "color": "FFB36B19",
             "grey": 140
           },
           {
-            "color": "FF105E51",
+            "color": "FFB9931C",
             "grey": 178
           },
           {
-            "color": "FF349988",
+            "color": "FFFFC100",
             "grey": 216
           },
           {
-            "color": "FF8CF4E2",
+            "color": "FFFFF87E",
             "grey": 255
           }
         ]
