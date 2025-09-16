@@ -1,8 +1,11 @@
 {
-  "color": "FFFFB97C",
+  "color": "FFFFBC5E",
+  "fallbacks": [
+    "crystal",
+    "rock"
+  ],
   "generator": {
     "supported_stats": [
-      "tconstruct:slimesuit",
       "tconstruct:arrow_head"
     ],
     "transformer": {
@@ -15,32 +18,32 @@
             "grey": 0
           },
           {
-            "color": "FFB04000",
+            "color": "FF5A391C",
             "grey": 63
           },
           {
-            "color": "FFD35200",
+            "color": "FF7E4821",
             "grey": 102
           },
           {
-            "color": "FFEC5E00",
+            "color": "FFB47140",
             "grey": 140
           },
           {
-            "color": "FFFF8324",
+            "color": "FFEBAA4E",
             "grey": 178
           },
           {
-            "color": "FFFFB97C",
+            "color": "FFFFBC5E",
             "grey": 216
           },
           {
-            "color": "FFFFFFFF",
+            "color": "FFF9D49C",
             "grey": 255
           }
         ]
       }
     }
   },
-  "luminosity": 10
+  "luminosity": 15
 }
