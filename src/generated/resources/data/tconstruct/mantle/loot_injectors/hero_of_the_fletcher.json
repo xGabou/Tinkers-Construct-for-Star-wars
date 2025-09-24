@@ -1,5 +1,5 @@
 {
-  "name": "minecraft:gameplay/hero_of_the_village/weaponsmith_gift",
+  "name": "minecraft:gameplay/hero_of_the_village/fletcher_gift",
   "pools": [
     {
       "entries": [
@@ -14,14 +14,12 @@
                 },
                 {
                   "type": "tconstruct:ancient"
-                },
-                {
-                  "type": "tconstruct:ancient"
                 }
               ]
             }
           ],
-          "name": "tconstruct:war_pick"
+          "name": "tconstruct:arrow",
+          "weight": 10
         }
       ],
       "name": "main"
