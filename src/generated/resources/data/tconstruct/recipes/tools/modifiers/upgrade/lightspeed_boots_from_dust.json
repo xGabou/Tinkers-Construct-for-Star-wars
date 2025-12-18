@@ -3,13 +3,13 @@
   "allow_crystal": true,
   "amount_per_item": 1,
   "input": {
-    "item": "minecraft:feather"
+    "tag": "forge:dusts/glowstone"
   },
   "level": {
-    "max": 4
+    "max": 3
   },
-  "needed_per_level": 16,
-  "result": "tconstruct:feather_falling",
+  "needed_per_level": 64,
+  "result": "tconstruct:lightspeed",
   "slots": {
     "upgrades": 1
   },
