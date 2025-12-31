@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "mantle:crafting_shaped_retextured",
   "category": "misc",
   "key": {
     "p": {
@@ -8,13 +8,14 @@
     "w": {
       "type": "forge:difference",
       "base": {
-        "tag": "forge:workbenches"
+        "tag": "tconstruct:tables"
       },
       "subtracted": {
         "item": "tconstruct:crafting_station"
       }
     }
   },
+  "match_all": false,
   "pattern": [
     "p",
     "w"
@@ -22,5 +23,6 @@
   "result": {
     "item": "tconstruct:crafting_station"
   },
-  "show_notification": true
+  "show_notification": true,
+  "texture": "w"
 }
