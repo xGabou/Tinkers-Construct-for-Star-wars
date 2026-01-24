@@ -6,6 +6,7 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.Projectile;
 import slimeknights.mantle.data.loadable.Loadables;
 import slimeknights.mantle.data.loadable.record.RecordLoadable;
+import slimeknights.tconstruct.library.json.LevelingValue;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.ModifierHooks;
 import slimeknights.tconstruct.library.modifiers.hook.build.VolatileDataModifierHook;
@@ -24,35 +25,37 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 /**
- * Module that just sets a boolean flag to true on a tool.
- * @see slimeknights.tconstruct.library.tools.definition.module.build.VolatileFlagModule
+ * Module that just sets a float on a tool to the given value
+ * @see VolatileFlagModule
  * @see VolatileIntModule
- * @see VolatileFloatModule
  */
-public record VolatileFlagModule(ResourceLocation flag, ModifierCondition<IToolContext> condition) implements VolatileDataModifierHook, ProjectileLaunchModifierHook, ModifierModule, ConditionalModule<IToolContext> {
-  private static final List<ModuleHook<?>> DEFAULT_HOOKS = HookProvider.<VolatileFlagModule>defaultHooks(ModifierHooks.VOLATILE_DATA);
-  public static final RecordLoadable<VolatileFlagModule> LOADER = RecordLoadable.create(Loadables.RESOURCE_LOCATION.requiredField("flag", VolatileFlagModule::flag), ModifierCondition.CONTEXT_FIELD, VolatileFlagModule::new);
+public record VolatileFloatModule(ResourceLocation flag, LevelingValue value, ModifierCondition<IToolContext> condition) implements VolatileDataModifierHook, ProjectileLaunchModifierHook, ModifierModule, ConditionalModule<IToolContext> {
+  private static final List<ModuleHook<?>> DEFAULT_HOOKS = HookProvider.<VolatileFloatModule>defaultHooks(ModifierHooks.VOLATILE_DATA);
+  public static final RecordLoadable<VolatileFloatModule> LOADER = RecordLoadable.create(
+    Loadables.RESOURCE_LOCATION.requiredField("flag", VolatileFloatModule::flag),
+    LevelingValue.LOADABLE.directField(VolatileFloatModule::value),
+    ModifierCondition.CONTEXT_FIELD, VolatileFloatModule::new);
 
-  public VolatileFlagModule(ResourceLocation flag) {
-    this(flag, ModifierCondition.ANY_CONTEXT);
+  public VolatileFloatModule(ResourceLocation flag, LevelingValue value) {
+    this(flag, value, ModifierCondition.ANY_CONTEXT);
   }
 
   @Override
   public void addVolatileData(IToolContext context, ModifierEntry modifier, ToolDataNBT volatileData) {
     if (condition.matches(context, modifier)) {
-      volatileData.putBoolean(flag, true);
+      volatileData.putFloat(flag, volatileData.getFloat(flag) + value.compute(modifier.getEffectiveLevel()));
     }
   }
 
   @Override
   public void onProjectileLaunch(IToolStackView tool, ModifierEntry modifier, LivingEntity shooter, Projectile projectile, @Nullable AbstractArrow arrow, ModDataNBT persistentData, boolean primary) {
     if (condition.matches(tool, modifier)) {
-      persistentData.putBoolean(flag, true);
+      persistentData.putFloat(flag, persistentData.getFloat(flag) + value.compute(modifier.getEffectiveLevel()));
     }
   }
 
   @Override
-  public RecordLoadable<VolatileFlagModule> getLoader() {
+  public RecordLoadable<VolatileFloatModule> getLoader() {
     return LOADER;
   }
 
