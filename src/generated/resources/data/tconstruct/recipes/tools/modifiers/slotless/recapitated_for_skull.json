@@ -10,17 +10,22 @@
       "subtracted": {
         "item": "minecraft:dragon_head"
       }
+    },
+    {
+      "tag": "forge:slimeballs"
     }
   ],
   "level": 1,
   "result": "tconstruct:recapitated",
   "tools": {
-    "type": "forge:difference",
-    "base": {
-      "tag": "tconstruct:modifiable/bonus_slots"
-    },
-    "subtracted": {
-      "tag": "tconstruct:modifiable/skulls"
-    }
+    "type": "forge:intersection",
+    "children": [
+      {
+        "tag": "tconstruct:modifiable/bonus_slots"
+      },
+      {
+        "tag": "tconstruct:modifiable/skulls"
+      }
+    ]
   }
 }
