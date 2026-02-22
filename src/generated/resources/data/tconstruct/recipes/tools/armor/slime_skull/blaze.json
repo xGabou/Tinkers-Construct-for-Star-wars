@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_basin",
   "cast": {
-    "item": "tconstruct:venombone_head"
+    "item": "tconstruct:blaze_head"
   },
   "cast_consumed": true,
   "cooling_time": 237,
@@ -15,7 +15,7 @@
       "Damage": 0,
       "tic_broken": 0,
       "tic_materials": [
-        "tconstruct:venombone"
+        "tconstruct:blaze"
       ]
     }
   }
