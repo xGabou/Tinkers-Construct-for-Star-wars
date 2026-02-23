@@ -4,20 +4,16 @@
     {
       "type": "tconstruct:restore_lost_health",
       "chance": {
-        "flat": 0.15
+        "flat": 1.0
       },
       "durability_usage": {
         "each_level": 1
       },
       "effect_level": {
-        "flat": 1
+        "each_level": 1
       },
-      "hooks": [
-        "tconstruct:modify_hurt",
-        "tconstruct:tooltip"
-      ],
       "percentage": {
-        "flat": 0.25
+        "flat": 0.5
       },
       "tool": {
         "type": "mantle:tag",
@@ -25,5 +21,6 @@
       }
     }
   ],
+  "priority": 25,
   "tooltip_display": "always"
 }
