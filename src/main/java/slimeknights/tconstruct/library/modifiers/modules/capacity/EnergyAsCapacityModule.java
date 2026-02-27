@@ -1,4 +1,4 @@
-package slimeknights.tconstruct.tools.modules.durability;
+package slimeknights.tconstruct.library.modifiers.modules.capacity;
 
 import slimeknights.mantle.data.loadable.record.RecordLoadable;
 import slimeknights.mantle.data.loadable.record.SingletonLoader;
@@ -8,23 +8,20 @@ import slimeknights.tconstruct.library.modifiers.hook.special.CapacityBarHook;
 import slimeknights.tconstruct.library.modifiers.modules.ModifierModule;
 import slimeknights.tconstruct.library.module.HookProvider;
 import slimeknights.tconstruct.library.module.ModuleHook;
+import slimeknights.tconstruct.library.tools.capability.ToolEnergyCapability;
 import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
-import slimeknights.tconstruct.library.tools.stat.ToolStats;
 
 import java.util.List;
 
-/**
- * Module connecting normal tool durability to {@link CapacityBarHook}. Meant to be used on the specific modifier rather than an internal modifier.
- * TODO 1.21: Move to {@link slimeknights.tconstruct.library.modifiers.modules.capacity}.
- */
-public enum DurabilityAsCapacityModule implements ModifierModule, CapacityBarHook {
+/** Module connecting Forge Energy to {@link CapacityBarHook}. Meant to be used on the specific modifier rather than an internal modifier. */
+public enum EnergyAsCapacityModule implements ModifierModule, CapacityBarHook {
   INSTANCE;
 
-  private static final List<ModuleHook<?>> DEFAULT_HOOKS = HookProvider.<DurabilityAsCapacityModule>defaultHooks(ModifierHooks.CAPACITY_BAR);
-  public static final RecordLoadable<DurabilityAsCapacityModule> LOADER = new SingletonLoader<>(INSTANCE);
+  private static final List<ModuleHook<?>> DEFAULT_HOOKS = HookProvider.<EnergyAsCapacityModule>defaultHooks(ModifierHooks.CAPACITY_BAR);
+  public static final RecordLoadable<EnergyAsCapacityModule> LOADER = new SingletonLoader<>(INSTANCE);
 
   @Override
-  public RecordLoadable<DurabilityAsCapacityModule> getLoader() {
+  public RecordLoadable<EnergyAsCapacityModule> getLoader() {
     return LOADER;
   }
 
@@ -35,26 +32,26 @@ public enum DurabilityAsCapacityModule implements ModifierModule, CapacityBarHoo
 
   @Override
   public int getAmount(IToolStackView tool) {
-    return tool.getCurrentDurability();
+    return ToolEnergyCapability.getEnergy(tool);
   }
 
   @Override
   public int getCapacity(IToolStackView tool, ModifierEntry entry) {
-    return tool.getStats().getInt(ToolStats.DURABILITY);
+    return ToolEnergyCapability.getMaxEnergy(tool);
   }
 
   @Override
   public void setAmount(IToolStackView tool, ModifierEntry entry, int amount) {
-    tool.setDamage(tool.getStats().getInt(ToolStats.DURABILITY) - amount);
+    ToolEnergyCapability.setEnergy(tool, amount);
   }
 
   @Override
   public void addAmount(IToolStackView tool, ModifierEntry modifier, int amount) {
-    tool.setDamage(tool.getDamage() - amount);
+    ToolEnergyCapability.setEnergy(tool, ToolEnergyCapability.getEnergy(tool) + amount);
   }
 
   @Override
   public void removeAmount(IToolStackView tool, ModifierEntry modifier, int amount) {
-    tool.setDamage(tool.getDamage() + amount);
+    ToolEnergyCapability.setEnergy(tool, ToolEnergyCapability.getEnergy(tool) - amount);
   }
 }
