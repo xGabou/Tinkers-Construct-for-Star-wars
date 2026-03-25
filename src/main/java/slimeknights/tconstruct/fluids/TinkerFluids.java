@@ -457,17 +457,17 @@ public final class TinkerFluids extends TinkerModule {
     acceptCompat(output, moltenAluminum, MaterialIds.aluminum);
     acceptCompat(output, moltenLead, MaterialIds.lead);
     acceptCompat(output, moltenSilver, MaterialIds.silver);
-    acceptMolten(output, moltenNickel);
+    acceptCompat(output, moltenNickel, MaterialIds.nickel);
     acceptMolten(output, moltenZinc);
-    acceptMolten(output, moltenPlatinum);
+    acceptCompat(output, moltenPlatinum, MaterialIds.platinum);
     acceptMolten(output, moltenTungsten);
     acceptCompat(output, moltenOsmium, MaterialIds.osmium);
-    acceptMolten(output, moltenUranium, MaterialIds.necronium);
-    acceptMolten(output, moltenChromium);
+    acceptCompat(output, moltenUranium, MaterialIds.uranium);
+    acceptCompat(output, moltenChromium, MaterialIds.chromium);
     acceptMolten(output, moltenCadmium);
     // compat alloys
     acceptCompat(output, moltenBronze, MaterialIds.bronze);
-    acceptMolten(output, moltenBrass, MaterialIds.platedSlimewood);
+    acceptCompat(output, moltenBrass, MaterialIds.brass);
     acceptCompat(output, moltenElectrum, MaterialIds.electrum);
     acceptCompat(output, moltenInvar, MaterialIds.invar);
     acceptCompat(output, moltenConstantan, MaterialIds.constantan);

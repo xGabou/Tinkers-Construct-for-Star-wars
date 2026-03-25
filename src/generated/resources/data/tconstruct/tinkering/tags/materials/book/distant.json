@@ -2,9 +2,9 @@
   "values": [
     "tconstruct:chorus",
     "tconstruct:whitestone",
-    "tconstruct:knightmetal",
+    "tconstruct:beskar",
     "tconstruct:knightly",
-    "tconstruct:knightslime",
+    "tconstruct:quadranium",
     "tconstruct:enderslime_vine",
     "tconstruct:ancient",
     "tconstruct:shulker",
@@ -13,14 +13,6 @@
     "tconstruct:end_rod",
     {
       "id": "tconstruct:ironwood",
-      "required": false
-    },
-    {
-      "id": "tconstruct:steeleaf",
-      "required": false
-    },
-    {
-      "id": "tconstruct:fiery",
       "required": false
     }
   ]

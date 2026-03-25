@@ -4,11 +4,16 @@
     "tconstruct:weeping_vine",
     "tconstruct:scorched_stone",
     "tconstruct:necrotic_bone",
-    "tconstruct:cobalt",
-    "tconstruct:manyullyn",
-    "tconstruct:hepatizon",
-    "tconstruct:cinderslime",
-    "tconstruct:queens_slime",
+    "tconstruct:steel",
+    "tconstruct:beskar",
+    "tconstruct:cortosis",
+    "tconstruct:electrum",
+    "tconstruct:alum",
+    "tconstruct:ultrachrome",
+    "tconstruct:crystal_weave",
+    "tconstruct:fire_diamond",
+    "tconstruct:quadranium",
+    "tconstruct:doonium",
     "tconstruct:blazing_bone",
     "tconstruct:blazewood",
     "tconstruct:jeweled_hide",
@@ -16,10 +21,6 @@
     "tconstruct:ichor",
     "tconstruct:quartz",
     "tconstruct:blaze",
-    "tconstruct:magma",
-    {
-      "id": "tconstruct:necronium",
-      "required": false
-    }
+    "tconstruct:magma"
   ]
 }
