@@ -1,14 +1,1 @@
-{
-  "perStat": {
-    "tconstruct:skull": [
-      {
-        "level": 1,
-        "name": "tconstruct:revenge"
-      },
-      {
-        "level": 1,
-        "name": "tconstruct:zombified_piglin_disguise"
-      }
-    ]
-  }
-}
+{}

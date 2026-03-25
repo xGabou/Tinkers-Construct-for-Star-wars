@@ -1,8 +1,10 @@
 {
-  "default": [
-    {
-      "level": 1,
-      "name": "tconstruct:valiant"
-    }
-  ]
+  "perStat": {
+    "tconstruct:ammo": [
+      {
+        "level": 1,
+        "name": "tconstruct:valiant"
+      }
+    ]
+  }
 }

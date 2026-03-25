@@ -133,7 +133,6 @@ public class MaterialRenderInfoProvider extends AbstractMaterialRenderInfoProvid
     buildRenderInfo(MaterialIds.dragonScale);
     buildRenderInfo(MaterialIds.endRod);
     redirect(MaterialIds.magnetite, MaterialIds.steel);
-    redirect(MaterialIds.kobold, MaterialIds.chromium);
     redirect(MaterialIds.shulker, MaterialIds.chorus);
     redirect(MaterialIds.knightly, MaterialIds.beskar);
 

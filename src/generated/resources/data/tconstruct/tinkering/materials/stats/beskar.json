@@ -12,9 +12,6 @@
       "melee_attack": 2.5,
       "mining_speed": 6.5,
       "mining_tier": "minecraft:netherite"
-    },
-    "tconstruct:skull": {
-      "durability": 220
     }
   }
 }

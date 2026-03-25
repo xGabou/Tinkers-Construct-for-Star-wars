@@ -48,9 +48,6 @@
     "tconstruct:plating_shield": {
       "durability": 252,
       "knockback_resistance": 0.05
-    },
-    "tconstruct:skull": {
-      "durability": 157
     }
   }
 }
