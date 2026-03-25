@@ -4,24 +4,26 @@
     "tconstruct:cactus",
     "tconstruct:iron",
     "tconstruct:weeping_vine",
-    "tconstruct:amethyst_bronze",
     "tconstruct:steel",
-    "tconstruct:manyullyn",
-    "tconstruct:cinderslime",
+    "tconstruct:titanium",
+    "tconstruct:chromium",
+    "tconstruct:cortosis",
+    "tconstruct:quadranium",
+    "tconstruct:fire_diamond",
     {
       "id": "tconstruct:lead",
       "required": false
     },
     {
-      "id": "tconstruct:bronze",
+      "id": "tconstruct:uranium",
       "required": false
     },
     {
-      "id": "tconstruct:electrum",
+      "id": "tconstruct:platinum",
       "required": false
     },
     {
-      "id": "tconstruct:fiery",
+      "id": "tconstruct:brass",
       "required": false
     }
   ]

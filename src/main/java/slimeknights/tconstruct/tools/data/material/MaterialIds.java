@@ -63,6 +63,24 @@ public final class MaterialIds {
   public static final MaterialId pigIron = id("pig_iron");
   public static final MaterialId roseGold = id("rose_gold");
   public static final MaterialId magnetite = id("magnetite");
+  public static final MaterialId beskar = id("beskar");
+  public static final MaterialId cortosis = id("cortosis");
+  public static final MaterialId alum = id("alum");
+  public static final MaterialId ultrachrome = id("ultrachrome");
+  public static final MaterialId crystalWeave = id("crystal_weave");
+  public static final MaterialId titanium = id("titanium");
+  public static final MaterialId fireDiamond = id("fire_diamond");
+  public static final MaterialId quadranium = id("quadranium");
+  public static final MaterialId aurodium = id("aurodium");
+  public static final MaterialId doonium = id("doonium");
+  public static final MaterialId castIron = id("cast_iron");
+  public static final MaterialId carbonite = id("carbonite");
+  public static final MaterialId codoran = id("codoran");
+  public static final MaterialId lapis = id("lapis");
+  public static final MaterialId coal = id("coal");
+  public static final MaterialId sulfur = id("sulfur");
+  public static final MaterialId lithium = id("lithium");
+  public static final MaterialId beryllium = id("beryllium");
   // tier 3 (nether)
   public static final MaterialId cobalt = id("cobalt");
   public static final MaterialId steel = id("steel");
@@ -102,16 +120,18 @@ public final class MaterialIds {
   /** @deprecated removing material, use alternative or recreate in your addon */
   @Deprecated(forRemoval = true)
   public static final MaterialId tungsten = id("tungsten");
-  /** @deprecated removing material, use alternative or recreate in your addon */
-  @Deprecated(forRemoval = true)
   public static final MaterialId platinum = id("platinum");
   public static final MaterialId silver = id("silver");
   public static final MaterialId lead = id("lead");
   public static final MaterialId aluminum = id("aluminum");
+  public static final MaterialId nickel = id("nickel");
+  public static final MaterialId uranium = id("uranium");
+  public static final MaterialId chromium = id("chromium");
   // tier 3 (mod integration)
   public static final MaterialId bronze = id("bronze");
   public static final MaterialId constantan = id("constantan");
   public static final MaterialId invar = id("invar");
+  public static final MaterialId brass = id("brass");
   public static final MaterialId necronium = id("necronium");
   public static final MaterialId electrum = id("electrum");
   public static final MaterialId pewter = id("pewter");
@@ -136,8 +156,9 @@ public final class MaterialIds {
 
   /** List of custom trim materials we support */
   public static final MaterialId[] TRIM_MATERIALS = {
-    slimesteel, amethystBronze, pigIron, roseGold,
-    steel, cobalt, manyullyn, hepatizon, cinderslime, queensSlime, knightmetal,
+    beskar, cortosis, electrum, alum,
+    steel, ultrachrome, quadranium, titanium, fireDiamond, crystalWeave,
+    aurodium, castIron,
     earthslime, skyslime, ichor, enderslime
   };
 

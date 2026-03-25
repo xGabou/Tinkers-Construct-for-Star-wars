@@ -5,15 +5,12 @@
     "tconstruct:venombone",
     "tconstruct:twisting_vine",
     "tconstruct:nahuatl",
-    "tconstruct:hepatizon",
-    "tconstruct:queens_slime",
-    "tconstruct:knightmetal",
+    "tconstruct:aurodium",
+    "tconstruct:lithium",
+    "tconstruct:beryllium",
+    "tconstruct:crystal_weave",
     {
       "id": "tconstruct:aluminum",
-      "required": false
-    },
-    {
-      "id": "tconstruct:necronium",
       "required": false
     },
     {
@@ -21,7 +18,7 @@
       "required": false
     },
     {
-      "id": "tconstruct:plated_slimewood",
+      "id": "tconstruct:electrum",
       "required": false
     }
   ]

@@ -1,11 +1,16 @@
 {
   "values": [
-    "tconstruct:manyullyn",
-    "tconstruct:hepatizon",
-    "tconstruct:queens_slime",
-    "tconstruct:cinderslime",
+    "tconstruct:beskar",
+    "tconstruct:cortosis",
+    "tconstruct:electrum",
+    "tconstruct:alum",
+    "tconstruct:ultrachrome",
+    "tconstruct:crystal_weave",
+    "tconstruct:fire_diamond",
+    "tconstruct:quadranium",
+    "tconstruct:doonium",
     "tconstruct:blazing_bone",
     "tconstruct:blazewood",
-    "tconstruct:ancient_hide"
+    "tconstruct:jeweled_hide"
   ]
 }

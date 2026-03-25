@@ -8,10 +8,10 @@
     "tconstruct:slimewood",
     "tconstruct:necrotic_bone",
     "tconstruct:skyslime_vine",
-    "tconstruct:slimesteel",
-    "tconstruct:rose_gold",
     "tconstruct:darkthread",
-    "tconstruct:cobalt",
+    "tconstruct:beskar",
+    "tconstruct:cast_iron",
+    "tconstruct:crystal_weave",
     "tconstruct:blazing_bone",
     "tconstruct:ancient_hide",
     "tconstruct:enderslime_vine",
@@ -20,23 +20,19 @@
       "required": false
     },
     {
-      "id": "tconstruct:silver",
-      "required": false
-    },
-    {
       "id": "tconstruct:ironwood",
       "required": false
     },
     {
-      "id": "tconstruct:invar",
+      "id": "tconstruct:nickel",
       "required": false
     },
     {
-      "id": "tconstruct:pewter",
+      "id": "tconstruct:constantan",
       "required": false
     },
     {
-      "id": "tconstruct:steeleaf",
+      "id": "tconstruct:brass",
       "required": false
     }
   ]

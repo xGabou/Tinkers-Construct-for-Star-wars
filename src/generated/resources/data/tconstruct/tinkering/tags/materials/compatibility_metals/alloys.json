@@ -1,7 +1,7 @@
 {
   "values": [
     {
-      "id": "tconstruct:bronze",
+      "id": "tconstruct:brass",
       "required": false
     },
     {
@@ -9,15 +9,7 @@
       "required": false
     },
     {
-      "id": "tconstruct:invar",
-      "required": false
-    },
-    {
       "id": "tconstruct:electrum",
-      "required": false
-    },
-    {
-      "id": "tconstruct:pewter",
       "required": false
     }
   ]

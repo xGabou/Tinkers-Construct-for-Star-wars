@@ -1,10 +1,6 @@
 {
   "values": [
     {
-      "id": "tconstruct:silver",
-      "required": false
-    },
-    {
       "id": "tconstruct:lead",
       "required": false
     },
@@ -13,7 +9,19 @@
       "required": false
     },
     {
-      "id": "tconstruct:osmium",
+      "id": "tconstruct:nickel",
+      "required": false
+    },
+    {
+      "id": "tconstruct:platinum",
+      "required": false
+    },
+    {
+      "id": "tconstruct:uranium",
+      "required": false
+    },
+    {
+      "id": "tconstruct:chromium",
       "required": false
     },
     {
@@ -21,11 +29,7 @@
       "required": false
     },
     {
-      "id": "tconstruct:steeleaf",
-      "required": false
-    },
-    {
-      "id": "tconstruct:fiery",
+      "id": "tconstruct:steel",
       "required": false
     },
     "#tconstruct:compatibility_metals/blocks"

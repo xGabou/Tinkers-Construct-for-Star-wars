@@ -10,9 +10,13 @@
     "tconstruct:venombone",
     "tconstruct:necrotic_bone",
     "tconstruct:gold",
-    "tconstruct:rose_gold",
-    "tconstruct:pig_iron",
+    "tconstruct:aurodium",
+    "tconstruct:cast_iron",
+    "tconstruct:blaze",
+    "tconstruct:ender_pearl",
+    "tconstruct:dragon_scale",
+    "tconstruct:venombone",
     "tconstruct:blazing_bone",
-    "tconstruct:ender_pearl"
+    "tconstruct:beskar"
   ]
 }

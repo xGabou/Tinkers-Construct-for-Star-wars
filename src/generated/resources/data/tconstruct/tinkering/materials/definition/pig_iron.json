@@ -1,6 +1,7 @@
 {
-  "craftable": false,
-  "hidden": false,
-  "sortOrder": 3,
-  "tier": 3
+  "redirect": [
+    {
+      "id": "tconstruct:cast_iron"
+    }
+  ]
 }

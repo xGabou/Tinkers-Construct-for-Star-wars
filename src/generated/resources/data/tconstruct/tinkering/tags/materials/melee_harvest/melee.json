@@ -10,23 +10,16 @@
     "tconstruct:nahuatl",
     "tconstruct:steel",
     "tconstruct:darkthread",
-    "tconstruct:manyullyn",
+    "tconstruct:cortosis",
+    "tconstruct:fire_diamond",
+    "tconstruct:doonium",
     "tconstruct:blazing_bone",
-    "tconstruct:knightmetal",
     {
-      "id": "tconstruct:silver",
+      "id": "tconstruct:uranium",
       "required": false
     },
     {
-      "id": "tconstruct:invar",
-      "required": false
-    },
-    {
-      "id": "tconstruct:pewter",
-      "required": false
-    },
-    {
-      "id": "tconstruct:necronium",
+      "id": "tconstruct:electrum",
       "required": false
     }
   ]
