@@ -1,14 +1,6 @@
 {
   "values": [
     {
-      "id": "tconstruct:brass",
-      "required": false
-    },
-    {
-      "id": "tconstruct:constantan",
-      "required": false
-    },
-    {
       "id": "tconstruct:electrum",
       "required": false
     }

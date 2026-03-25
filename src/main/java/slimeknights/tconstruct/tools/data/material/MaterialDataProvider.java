@@ -74,7 +74,6 @@ public class MaterialDataProvider extends AbstractMaterialDataProvider {
     addRedirect(new MaterialId(TConstruct.MOD_ID, "bloodbone"), redirect(MaterialIds.venombone));
 
     // tier 3
-    addMaterial(MaterialIds.beskar,         4, ORDER_GENERAL, false);
     addMaterial(MaterialIds.cortosis,       4, ORDER_WEAPON,  false);
     addMaterial(MaterialIds.electrum,       4, ORDER_SPECIAL, false);
     addMaterial(MaterialIds.alum,           4, ORDER_HARVEST, false);
@@ -86,13 +85,22 @@ public class MaterialDataProvider extends AbstractMaterialDataProvider {
     addMaterial(MaterialIds.aurodium,       3, ORDER_SPECIAL, false);
     addMaterial(MaterialIds.doonium,        3, ORDER_WEAPON,  false);
     addMaterial(MaterialIds.castIron,       2, ORDER_GENERAL, false);
-    addMaterial(MaterialIds.carbonite,      1, ORDER_SPECIAL, true);
-    addMaterial(MaterialIds.codoran,        1, ORDER_HARVEST, true);
-    addMaterial(MaterialIds.lapis,          1, ORDER_REPAIR,  true);
-    addMaterial(MaterialIds.coal,           1, ORDER_REPAIR,  true);
-    addMaterial(MaterialIds.sulfur,         1, ORDER_REPAIR,  true);
-    addMaterial(MaterialIds.lithium,        1, ORDER_RANGED,  true);
-    addMaterial(MaterialIds.beryllium,      1, ORDER_RANGED,  true);
+    addMaterial(MaterialIds.carbonite,      1, ORDER_SPECIAL, false);
+    addCraftingOnly(MaterialIds.carbonite);
+    addMaterial(MaterialIds.codoran,        1, ORDER_HARVEST, false);
+    addCraftingOnly(MaterialIds.codoran);
+    addMaterial(MaterialIds.lapis,          1, ORDER_REPAIR,  false);
+    addCraftingOnly(MaterialIds.lapis);
+    addMaterial(MaterialIds.redstone,       1, ORDER_REPAIR,  false);
+    addCraftingOnly(MaterialIds.redstone);
+    addMaterial(MaterialIds.coal,           1, ORDER_REPAIR,  false);
+    addCraftingOnly(MaterialIds.coal);
+    addMaterial(MaterialIds.sulfur,         1, ORDER_REPAIR,  false);
+    addCraftingOnly(MaterialIds.sulfur);
+    addMaterial(MaterialIds.lithium,        1, ORDER_RANGED,  false);
+    addCraftingOnly(MaterialIds.lithium);
+    addMaterial(MaterialIds.beryllium,      1, ORDER_RANGED,  false);
+    addCraftingOnly(MaterialIds.beryllium);
     addMaterial(MaterialIds.nahuatl,        3, ORDER_WEAPON,  true);
     addMaterial(MaterialIds.obsidian,       3, ORDER_WEAPON,  false);
     // tier 3 (nether)
@@ -128,10 +136,14 @@ public class MaterialDataProvider extends AbstractMaterialDataProvider {
 
     // tier 2 (mod integration)
     addCompatMetalMaterial(MaterialIds.lead,     2, ORDER_COMPAT + ORDER_HARVEST);
+    addCraftingOnly(MaterialIds.lead);
     addCompatMetalMaterial(MaterialIds.aluminum, 2, ORDER_COMPAT + ORDER_RANGED);
+    addCraftingOnly(MaterialIds.aluminum);
     addCompatMetalMaterial(MaterialIds.nickel,   2, ORDER_COMPAT + ORDER_GENERAL);
+    addCraftingOnly(MaterialIds.nickel);
     addCompatMetalMaterial(MaterialIds.platinum, 2, ORDER_COMPAT + ORDER_SPECIAL);
     addCompatMetalMaterial(MaterialIds.uranium,  2, ORDER_COMPAT + ORDER_WEAPON);
+    addCraftingOnly(MaterialIds.uranium);
     addCompatMetalMaterial(MaterialIds.chromium, 2, ORDER_COMPAT + ORDER_RANGED);
     // ironwood works in a part builder even though its ingots
     addCompatMaterial(MaterialIds.ironwood, 2, ORDER_COMPAT + ORDER_GENERAL, true, "ingots/ironwood");
@@ -140,7 +152,9 @@ public class MaterialDataProvider extends AbstractMaterialDataProvider {
       new OrCondition(ConfigEnabledCondition.FORCE_INTEGRATION_MATERIALS, tagExistsCondition("treated_wood"), new TagFilledCondition<>(FluidTags.create(commonResource("creosote")))));
     // tier 3 (mod integration)
     addCompatAlloy(MaterialIds.constantan,      3, ORDER_COMPAT + ORDER_HARVEST, "nickel");
+    addCraftingOnly(MaterialIds.constantan);
     addCompatAlloy(MaterialIds.brass,           3, ORDER_COMPAT + ORDER_SPECIAL, "zinc");
+    addCraftingOnly(MaterialIds.brass);
 
     // slimesuit - textures
     addMaterial(MaterialIds.blood, 2, ORDER_REPAIR, true);
@@ -154,31 +168,7 @@ public class MaterialDataProvider extends AbstractMaterialDataProvider {
     addRedirect(id("chain"), redirect(MaterialIds.aurodium));
     // zombies now use leather instead of flesh for their skull
     addRedirect(id("rotten_flesh"), redirect(MaterialIds.leather));
-    addRedirect(id("slimesteel"), redirect(MaterialIds.beskar));
-    addRedirect(id("amethyst_bronze"), redirect(MaterialIds.crystalWeave));
-    addRedirect(id("rose_gold"), redirect(MaterialIds.aurodium));
-    addRedirect(id("pig_iron"), redirect(MaterialIds.castIron));
-    addRedirect(id("cobalt"), redirect(MaterialIds.chromium));
-    addRedirect(id("queens_slime"), redirect(MaterialIds.beskar));
-    addRedirect(id("cinderslime"), redirect(MaterialIds.cortosis));
-    addRedirect(id("hepatizon"), redirect(MaterialIds.titanium));
-    addRedirect(id("manyullyn"), redirect(MaterialIds.quadranium));
-    addRedirect(id("knightmetal"), redirect(MaterialIds.beskar));
-    addRedirect(id("knightslime"), redirect(MaterialIds.quadranium));
-    addRedirect(id("osmium"), redirect(MaterialIds.titanium));
-    addRedirect(id("silver"), redirect(MaterialIds.electrum));
-    addRedirect(id("bronze"), redirect(MaterialIds.brass));
-    addRedirect(id("invar"), redirect(MaterialIds.titanium));
-    addRedirect(id("pewter"), redirect(MaterialIds.carbonite));
     addRedirect(id("steeleaf"), redirect(MaterialIds.steel));
-    addRedirect(id("fiery"), redirect(MaterialIds.fireDiamond));
-    addRedirect(id("nicrosil"), redirect(MaterialIds.ultrachrome));
-    addRedirect(id("necronium"), redirect(MaterialIds.uranium));
-    addRedirect(id("plated_slimewood"), redirect(MaterialIds.brass));
-    addRedirect(id("tungsten"),
-      conditionalRedirect(MaterialIds.lead, tagExistsCondition("ingots/lead")),
-      conditionalRedirect(MaterialIds.invar, new OrCondition(tagExistsCondition("ingots/invar"), tagExistsCondition("ingots/nickel"))),
-      redirect(MaterialIds.iron));
   }
   /**
    * Creates a new material ID

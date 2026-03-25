@@ -11,19 +11,7 @@
     "tconstruct:quadranium",
     "tconstruct:fire_diamond",
     {
-      "id": "tconstruct:lead",
-      "required": false
-    },
-    {
-      "id": "tconstruct:uranium",
-      "required": false
-    },
-    {
       "id": "tconstruct:platinum",
-      "required": false
-    },
-    {
-      "id": "tconstruct:brass",
       "required": false
     }
   ]

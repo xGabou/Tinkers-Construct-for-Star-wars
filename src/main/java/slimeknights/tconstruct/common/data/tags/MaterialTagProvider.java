@@ -28,11 +28,11 @@ public class MaterialTagProvider extends AbstractMaterialTagProvider {
       MaterialIds.twistingVine, MaterialIds.weepingVine,
       MaterialIds.scorchedStone, MaterialIds.necroticBone,
       MaterialIds.steel,
-      MaterialIds.beskar, MaterialIds.cortosis, MaterialIds.electrum,
+      MaterialIds.cortosis, MaterialIds.electrum,
       MaterialIds.alum, MaterialIds.ultrachrome, MaterialIds.crystalWeave,
       MaterialIds.fireDiamond, MaterialIds.quadranium, MaterialIds.doonium,
       MaterialIds.blazingBone, MaterialIds.blazewood, MaterialIds.ancientHide,
-      MaterialIds.glowstone, MaterialIds.ichor, MaterialIds.quartz, MaterialIds.blaze, MaterialIds.magma
+      MaterialIds.glowstone, MaterialIds.ichor, MaterialIds.blaze, MaterialIds.magma
     );
 
     tag(TinkerTags.Materials.BASIC_AMMO).add(
@@ -42,53 +42,48 @@ public class MaterialTagProvider extends AbstractMaterialTagProvider {
     );
 
     tag(TinkerTags.Materials.BLAZING_BLOOD).add(
-      MaterialIds.beskar, MaterialIds.cortosis, MaterialIds.electrum,
+      MaterialIds.cortosis, MaterialIds.electrum,
       MaterialIds.alum, MaterialIds.ultrachrome, MaterialIds.crystalWeave,
       MaterialIds.fireDiamond, MaterialIds.quadranium, MaterialIds.doonium,
       MaterialIds.blazingBone, MaterialIds.blazewood, MaterialIds.ancientHide
     );
     tag(TinkerTags.Materials.DISTANT).add(
       MaterialIds.chorus, MaterialIds.whitestone,
-      MaterialIds.beskar, MaterialIds.knightly, MaterialIds.quadranium, MaterialIds.enderslimeVine, MaterialIds.ancient,
+      MaterialIds.knightly, MaterialIds.quadranium, MaterialIds.enderslimeVine, MaterialIds.ancient,
       MaterialIds.shulker, MaterialIds.dragonScale, MaterialIds.enderslime, MaterialIds.endRod
     ).addOptional(MaterialIds.ironwood);
 
     tag(TinkerTags.Materials.BARTERED).add(
       MaterialIds.nahuatl, MaterialIds.obsidian, MaterialIds.darkthread,
       MaterialIds.steel, MaterialIds.titanium, MaterialIds.aurodium,
-      MaterialIds.beskar, MaterialIds.cortosis, MaterialIds.electrum,
+      MaterialIds.cortosis, MaterialIds.electrum,
       MaterialIds.alum, MaterialIds.ultrachrome, MaterialIds.crystalWeave,
       MaterialIds.fireDiamond, MaterialIds.quadranium, MaterialIds.doonium,
       MaterialIds.blazingBone, MaterialIds.blazewood, MaterialIds.ancientHide, MaterialIds.ancient
     );
 
     tag(TinkerTags.Materials.COMPATABILITY_METALS).addOptional(
-      MaterialIds.lead, MaterialIds.aluminum,
-      MaterialIds.nickel, MaterialIds.platinum, MaterialIds.uranium, MaterialIds.chromium,
+      MaterialIds.platinum, MaterialIds.chromium,
       MaterialIds.ironwood,
       MaterialIds.steel
     ).addTag(TinkerTags.Materials.COMPATABILITY_BLOCKS);
     tag(TinkerTags.Materials.COMPATABILITY_BLOCKS).addTag(TinkerTags.Materials.COMPATABILITY_ALLOYS);
-    tag(TinkerTags.Materials.COMPATABILITY_ALLOYS).addOptional(MaterialIds.brass, MaterialIds.constantan, MaterialIds.electrum);
+    tag(TinkerTags.Materials.COMPATABILITY_ALLOYS).addOptional(MaterialIds.electrum);
 
     tag(TinkerTags.Materials.GENERAL).add(
       MaterialIds.wood, MaterialIds.string, MaterialIds.vine, MaterialIds.leather,
       MaterialIds.iron, MaterialIds.slimewood,
-      MaterialIds.castIron, MaterialIds.beskar, MaterialIds.quadranium,
-      MaterialIds.electrum, MaterialIds.carbonite, MaterialIds.enderslimeVine
+      MaterialIds.castIron, MaterialIds.quadranium,
+      MaterialIds.electrum, MaterialIds.enderslimeVine
     ).addOptional(
       MaterialIds.treatedWood,
-      MaterialIds.ironwood,
-      MaterialIds.nickel, MaterialIds.brass
+      MaterialIds.ironwood
     );
     tag(TinkerTags.Materials.HARVEST).add(
       MaterialIds.rock, MaterialIds.copper,
       MaterialIds.searedStone, MaterialIds.whitestone, MaterialIds.skyslimeVine, MaterialIds.twistingVine,
       MaterialIds.alum, MaterialIds.ultrachrome, MaterialIds.titanium,
-      MaterialIds.chromium, MaterialIds.platinum, MaterialIds.codoran, MaterialIds.ancientHide
-    ).addOptional(
-      MaterialIds.lead,
-      MaterialIds.constantan, MaterialIds.aluminum
+      MaterialIds.chromium, MaterialIds.platinum, MaterialIds.ancientHide
     );
     tag(TinkerTags.Materials.MELEE).add(
       MaterialIds.flint, MaterialIds.bone, MaterialIds.chorus,
@@ -96,7 +91,6 @@ public class MaterialTagProvider extends AbstractMaterialTagProvider {
       MaterialIds.nahuatl, MaterialIds.steel, MaterialIds.darkthread,
       MaterialIds.cortosis, MaterialIds.fireDiamond, MaterialIds.doonium, MaterialIds.blazingBone
     ).addOptional(
-      MaterialIds.uranium,
       MaterialIds.electrum
     );
 
@@ -104,21 +98,19 @@ public class MaterialTagProvider extends AbstractMaterialTagProvider {
       MaterialIds.wood, MaterialIds.chorus,
       MaterialIds.string, MaterialIds.vine, MaterialIds.leather,
       MaterialIds.slimewood, MaterialIds.necroticBone, MaterialIds.skyslimeVine,
-      MaterialIds.darkthread, MaterialIds.beskar, MaterialIds.castIron, MaterialIds.crystalWeave,
+      MaterialIds.darkthread, MaterialIds.castIron, MaterialIds.crystalWeave,
       MaterialIds.blazingBone, MaterialIds.ancientHide, MaterialIds.enderslimeVine
     ).addOptional(
       MaterialIds.treatedWood,
-      MaterialIds.ironwood, MaterialIds.nickel,
-      MaterialIds.constantan, MaterialIds.brass
+      MaterialIds.ironwood
     );
     tag(TinkerTags.Materials.LIGHT).add(
       MaterialIds.bamboo, MaterialIds.bone,
       MaterialIds.venombone, MaterialIds.twistingVine,
       MaterialIds.nahuatl, MaterialIds.aurodium,
-      MaterialIds.lithium, MaterialIds.beryllium, MaterialIds.crystalWeave
+      MaterialIds.crystalWeave
     ).addOptional(
-      MaterialIds.aluminum,
-      MaterialIds.constantan, MaterialIds.electrum
+      MaterialIds.electrum
     );
     tag(TinkerTags.Materials.HEAVY).add(
       MaterialIds.copper, MaterialIds.cactus,
@@ -126,8 +118,7 @@ public class MaterialTagProvider extends AbstractMaterialTagProvider {
       MaterialIds.steel, MaterialIds.titanium, MaterialIds.chromium,
       MaterialIds.cortosis, MaterialIds.quadranium, MaterialIds.fireDiamond
     ).addOptional(
-      MaterialIds.lead, MaterialIds.uranium,
-      MaterialIds.platinum, MaterialIds.brass
+      MaterialIds.platinum
     );
 
     tag(TinkerTags.Materials.SLIMESKULL).add(
@@ -137,7 +128,7 @@ public class MaterialTagProvider extends AbstractMaterialTagProvider {
       MaterialIds.bone, MaterialIds.ice, MaterialIds.necroticBone,
       MaterialIds.gold, MaterialIds.aurodium, MaterialIds.castIron,
       MaterialIds.blaze, MaterialIds.enderPearl, MaterialIds.dragonScale,
-      MaterialIds.venombone, MaterialIds.blazingBone, MaterialIds.beskar
+      MaterialIds.venombone, MaterialIds.blazingBone
     );
   }
 

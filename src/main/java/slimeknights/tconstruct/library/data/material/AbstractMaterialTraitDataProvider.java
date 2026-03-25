@@ -48,6 +48,9 @@ public abstract class AbstractMaterialTraitDataProvider extends GenericDataProvi
     // if you want no traits for your material, use an empty list
     Set<MaterialId> materialsGenerated = materials.getAllMaterials();
     for (MaterialId material : materialsGenerated) {
+      if (materials.isCraftingOnly(material)) {
+        continue;
+      }
       if (!allMaterialTraits.containsKey(material)) {
         throw new IllegalStateException(String.format("Missing material traits for '%s'", material));
       }
@@ -66,6 +69,9 @@ public abstract class AbstractMaterialTraitDataProvider extends GenericDataProvi
    * @return  MaterialTraits object, creating one if needed
    */
   protected MaterialTraitsBuilder material(MaterialId location) {
+    if (materials.isCraftingOnly(location)) {
+      return new MaterialTraitsBuilder();
+    }
     return allMaterialTraits.computeIfAbsent(location, id -> new MaterialTraitsBuilder());
   }
 
@@ -74,6 +80,9 @@ public abstract class AbstractMaterialTraitDataProvider extends GenericDataProvi
    * @param location  Material ID
    */
   protected void noTraits(MaterialId location) {
+    if (materials.isCraftingOnly(location)) {
+      return;
+    }
     material(location);
   }
 
@@ -83,6 +92,9 @@ public abstract class AbstractMaterialTraitDataProvider extends GenericDataProvi
    * @param traits    Traits to add
    */
   protected void addDefaultTraits(MaterialId location, ModifierEntry... traits) {
+    if (materials.isCraftingOnly(location)) {
+      return;
+    }
     material(location).addDefaultTraits(traits);
   }
 
@@ -92,6 +104,9 @@ public abstract class AbstractMaterialTraitDataProvider extends GenericDataProvi
    * @param traits    Traits to add
    */
   protected void addDefaultTraits(MaterialId location, ModifierId... traits) {
+    if (materials.isCraftingOnly(location)) {
+      return;
+    }
     material(location).addDefaultTraits(traits);
   }
 
@@ -101,6 +116,9 @@ public abstract class AbstractMaterialTraitDataProvider extends GenericDataProvi
    * @param traits    Traits to add
    */
   protected void addDefaultTraits(MaterialId location, LazyModifier... traits) {
+    if (materials.isCraftingOnly(location)) {
+      return;
+    }
     material(location).addDefaultTraits(traits);
   }
 
@@ -111,6 +129,9 @@ public abstract class AbstractMaterialTraitDataProvider extends GenericDataProvi
    * @param traits    Traits to add
    */
   protected void addTraits(MaterialId location, MaterialStatsId statsId, ModifierEntry... traits) {
+    if (materials.isCraftingOnly(location)) {
+      return;
+    }
     material(location).addTraits(statsId, traits);
   }
 
@@ -121,6 +142,9 @@ public abstract class AbstractMaterialTraitDataProvider extends GenericDataProvi
    * @param traits    Traits to add
    */
   protected void addTraits(MaterialId location, MaterialStatsId statsId, ModifierId... traits) {
+    if (materials.isCraftingOnly(location)) {
+      return;
+    }
     material(location).addTraits(statsId, traits);
   }
 
@@ -131,6 +155,9 @@ public abstract class AbstractMaterialTraitDataProvider extends GenericDataProvi
    * @param traits    Traits to add
    */
   protected void addTraits(MaterialId location, MaterialStatsId statsId, LazyModifier... traits) {
+    if (materials.isCraftingOnly(location)) {
+      return;
+    }
     material(location).addTraits(statsId, traits);
   }
 

@@ -77,6 +77,7 @@ public final class MaterialIds {
   public static final MaterialId carbonite = id("carbonite");
   public static final MaterialId codoran = id("codoran");
   public static final MaterialId lapis = id("lapis");
+  public static final MaterialId redstone = id("redstone");
   public static final MaterialId coal = id("coal");
   public static final MaterialId sulfur = id("sulfur");
   public static final MaterialId lithium = id("lithium");
@@ -156,7 +157,7 @@ public final class MaterialIds {
 
   /** List of custom trim materials we support */
   public static final MaterialId[] TRIM_MATERIALS = {
-    beskar, cortosis, electrum, alum,
+    cortosis, electrum, alum,
     steel, ultrachrome, quadranium, titanium, fireDiamond, crystalWeave,
     aurodium, castIron,
     earthslime, skyslime, ichor, enderslime

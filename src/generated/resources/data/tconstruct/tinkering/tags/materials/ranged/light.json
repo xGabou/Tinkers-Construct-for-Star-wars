@@ -6,17 +6,7 @@
     "tconstruct:twisting_vine",
     "tconstruct:nahuatl",
     "tconstruct:aurodium",
-    "tconstruct:lithium",
-    "tconstruct:beryllium",
     "tconstruct:crystal_weave",
-    {
-      "id": "tconstruct:aluminum",
-      "required": false
-    },
-    {
-      "id": "tconstruct:constantan",
-      "required": false
-    },
     {
       "id": "tconstruct:electrum",
       "required": false

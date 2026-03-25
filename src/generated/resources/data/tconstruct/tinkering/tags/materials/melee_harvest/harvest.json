@@ -11,19 +11,6 @@
     "tconstruct:titanium",
     "tconstruct:chromium",
     "tconstruct:platinum",
-    "tconstruct:codoran",
-    "tconstruct:ancient_hide",
-    {
-      "id": "tconstruct:lead",
-      "required": false
-    },
-    {
-      "id": "tconstruct:constantan",
-      "required": false
-    },
-    {
-      "id": "tconstruct:aluminum",
-      "required": false
-    }
+    "tconstruct:ancient_hide"
   ]
 }

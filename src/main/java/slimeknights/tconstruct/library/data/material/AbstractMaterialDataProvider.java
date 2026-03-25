@@ -57,6 +57,8 @@ public abstract class AbstractMaterialDataProvider extends GenericDataProvider {
 
   /** List of all added materials */
   private final Map<MaterialId, DataMaterial> allMaterials = new HashMap<>();
+  /** Materials that should only act as crafting ingredients, not full materials */
+  private final Set<MaterialId> craftingOnlyMaterials = new java.util.HashSet<>();
 
   /** Boolean just in case material stats run first */
   private boolean addMaterialsRun = false;
@@ -98,6 +100,17 @@ public abstract class AbstractMaterialDataProvider extends GenericDataProvider {
                        .collect(Collectors.toSet());
   }
 
+  /** Checks if the given material is craftable in the part builder. Unknown IDs default to true for addon compatibility. */
+  public boolean isCraftable(MaterialId location) {
+    DataMaterial data = allMaterials.get(location);
+    return data == null || data.material == null || data.material.isCraftable();
+  }
+
+  /** Checks if the given material is crafting-only and should not receive tool stats or traits. Unknown IDs default to false for addon compatibility. */
+  public boolean isCraftingOnly(MaterialId location) {
+    return craftingOnlyMaterials.contains(location);
+  }
+
 
   /* Base methods */
 
@@ -117,6 +130,11 @@ public abstract class AbstractMaterialDataProvider extends GenericDataProvider {
   /** Adds JSON to redirect an ID to another ID */
   protected void addRedirect(MaterialId id, JsonRedirect... redirect) {
     addRedirect(id, null, redirect);
+  }
+
+  /** Marks the given material as crafting-only. */
+  protected void addCraftingOnly(MaterialId location) {
+    craftingOnlyMaterials.add(location);
   }
 
   /* Material helpers */

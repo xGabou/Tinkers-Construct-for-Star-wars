@@ -15,10 +15,6 @@
     "tconstruct:doonium",
     "tconstruct:blazing_bone",
     {
-      "id": "tconstruct:uranium",
-      "required": false
-    },
-    {
       "id": "tconstruct:electrum",
       "required": false
     }

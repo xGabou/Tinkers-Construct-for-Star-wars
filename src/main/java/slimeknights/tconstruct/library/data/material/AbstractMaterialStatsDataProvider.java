@@ -46,6 +46,9 @@ public abstract class AbstractMaterialStatsDataProvider extends GenericDataProvi
     // ensure we have stats for all materials
     Set<MaterialId> materialsGenerated = materials.getAllMaterials();
     for (MaterialId material : materialsGenerated) {
+      if (materials.isCraftingOnly(material)) {
+        continue;
+      }
       if (!allMaterialStats.containsKey(material)) {
         throw new IllegalStateException(String.format("Missing material stats for '%s'", material));
       }
@@ -69,6 +72,9 @@ public abstract class AbstractMaterialStatsDataProvider extends GenericDataProvi
    * @param stats     Stats to add
    */
   protected void addMaterialStats(MaterialId location, IMaterialStats... stats) {
+    if (materials.isCraftingOnly(location)) {
+      return;
+    }
     Collections.addAll(getStats(location).required, stats);
   }
 
@@ -79,6 +85,9 @@ public abstract class AbstractMaterialStatsDataProvider extends GenericDataProvi
    */
   @SuppressWarnings("unused") // API
   protected void addOptionalStats(MaterialId location, IMaterialStats... stats) {
+    if (materials.isCraftingOnly(location)) {
+      return;
+    }
     Collections.addAll(getStats(location).optional, stats);
   }
 
@@ -89,6 +98,9 @@ public abstract class AbstractMaterialStatsDataProvider extends GenericDataProvi
    * @param otherStats   Other stat types to add after the builder
    */
   protected void addArmorStats(MaterialId location, ArmorModuleBuilder<? extends IMaterialStats> statBuilder, IMaterialStats... otherStats) {
+    if (materials.isCraftingOnly(location)) {
+      return;
+    }
     IMaterialStats[] stats = new IMaterialStats[4];
     for (ArmorItem.Type slotType : ArmorItem.Type.values()) {
       stats[slotType.ordinal()] = statBuilder.build(slotType);
@@ -106,6 +118,9 @@ public abstract class AbstractMaterialStatsDataProvider extends GenericDataProvi
    * @param otherStats   Other stat types to add after the builder
    */
   protected void addArmorShieldStats(MaterialId location, ArmorShieldModuleBuilder<? extends IMaterialStats> statBuilder, IMaterialStats... otherStats) {
+    if (materials.isCraftingOnly(location)) {
+      return;
+    }
     addArmorStats(location, statBuilder, otherStats);
     addMaterialStats(location, statBuilder.buildShield());
   }

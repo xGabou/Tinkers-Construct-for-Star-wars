@@ -21,11 +21,11 @@ public final class CustomOreMaterialRegistry {
     registerBuiltin(MaterialIds.lead, "lead", CompatType.ORE);
     registerBuiltin(MaterialIds.nickel, "nickel", CompatType.ORE);
     registerBuiltin(MaterialIds.platinum, "platinum", CompatType.ORE);
-    registerBuiltin(MaterialIds.uranium, "uranium", CompatType.ORE, MaterialIds.necronium);
+    registerBuiltin(MaterialIds.uranium, "uranium", CompatType.ORE);
     registerBuiltin(MaterialIds.chromium, "chromium", CompatType.ORE);
     registerBuiltin(MaterialIds.electrum, "electrum", CompatType.ALLOY);
     registerBuiltin(MaterialIds.constantan, "constantan", CompatType.ALLOY);
-    registerBuiltin(MaterialIds.brass, "brass", CompatType.ALLOY, MaterialIds.platedSlimewood);
+    registerBuiltin(MaterialIds.brass, "brass", CompatType.ALLOY);
     registerBuiltin(MaterialIds.steel, "steel", CompatType.ORE);
   }
 

@@ -5,7 +5,6 @@
     "tconstruct:scorched_stone",
     "tconstruct:necrotic_bone",
     "tconstruct:steel",
-    "tconstruct:beskar",
     "tconstruct:cortosis",
     "tconstruct:electrum",
     "tconstruct:alum",
@@ -19,7 +18,6 @@
     "tconstruct:ancient_hide",
     "tconstruct:glowstone",
     "tconstruct:ichor",
-    "tconstruct:quartz",
     "tconstruct:blaze",
     "tconstruct:magma"
   ]

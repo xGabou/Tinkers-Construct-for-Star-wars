@@ -163,7 +163,6 @@ public class MaterialRecipeProvider extends BaseRecipeProvider implements IMater
 
     // tier 3
     materialRecipe(consumer, MaterialIds.nahuatl, Ingredient.of(TinkerMaterials.nahuatl), 1, 1, folder + "nahuatl");
-    metalMaterialRecipe(consumer, MaterialIds.beskar, folder, "beskar", true);
     metalMaterialRecipe(consumer, MaterialIds.cortosis, folder, "cortosis", true);
     metalMaterialRecipe(consumer, MaterialIds.electrum, folder, "electrum", true);
     metalMaterialRecipe(consumer, MaterialIds.alum, folder, "alum", true);
@@ -178,6 +177,7 @@ public class MaterialRecipeProvider extends BaseRecipeProvider implements IMater
     metalMaterialRecipe(consumer, MaterialIds.carbonite, folder, "carbonite", true);
     metalMaterialRecipe(consumer, MaterialIds.codoran, folder, "copper", true);
     materialRecipe(consumer, MaterialIds.lapis, Ingredient.of(Items.LAPIS_LAZULI), 1, 1, folder + "lapis");
+    materialRecipe(consumer, MaterialIds.redstone, Ingredient.of(Items.REDSTONE), 1, 1, folder + "redstone");
     materialRecipe(consumer, MaterialIds.coal, Ingredient.of(Items.COAL), 1, 1, folder + "coal");
     materialRecipe(withCondition(consumer, tagCondition("dusts/sulfur")), MaterialIds.sulfur, Ingredient.of(getItemTag(COMMON, "dusts/sulfur")), 1, 1, folder + "sulfur");
     metalMaterialRecipe(consumer, MaterialIds.lithium, folder, "lithium", true);

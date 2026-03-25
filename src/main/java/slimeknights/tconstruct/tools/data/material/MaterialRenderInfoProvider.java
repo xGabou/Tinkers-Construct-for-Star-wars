@@ -74,7 +74,6 @@ public class MaterialRenderInfoProvider extends AbstractMaterialRenderInfoProvid
 
     buildRenderInfo(MaterialIds.nahuatl).color(0x3B2754).fallbacks("wood", "stick");
     buildRenderInfo(MaterialIds.steel).color(0x959595).fallbacks("metal");
-    buildRenderInfo(MaterialIds.beskar).color(0x9AA28B).fallbacks("metal");
     buildRenderInfo(MaterialIds.cortosis).color(0x6E7C7B).fallbacks("metal");
     buildRenderInfo(MaterialIds.electrum).color(0xFFEA65).fallbacks("metal");
     buildRenderInfo(MaterialIds.alum).color(0xC9D8D8).fallbacks("metal");
@@ -89,6 +88,7 @@ public class MaterialRenderInfoProvider extends AbstractMaterialRenderInfoProvid
     buildRenderInfo(MaterialIds.carbonite).color(0x3F444D).fallbacks("metal");
     buildRenderInfo(MaterialIds.codoran).color(0xD97C59).fallbacks("metal");
     buildRenderInfo(MaterialIds.lapis).color(0x3B64C4).fallbacks("metal");
+    buildRenderInfo(MaterialIds.redstone).color(0xB02A2A).fallbacks("metal");
     buildRenderInfo(MaterialIds.coal).color(0x2B2B2B).fallbacks("metal");
     buildRenderInfo(MaterialIds.sulfur).color(0xD7C648).fallbacks("metal");
     buildRenderInfo(MaterialIds.lithium).color(0xC8CDD8).fallbacks("metal");
@@ -134,7 +134,7 @@ public class MaterialRenderInfoProvider extends AbstractMaterialRenderInfoProvid
     buildRenderInfo(MaterialIds.endRod);
     redirect(MaterialIds.magnetite, MaterialIds.steel);
     redirect(MaterialIds.shulker, MaterialIds.chorus);
-    redirect(MaterialIds.knightly, MaterialIds.beskar);
+    buildRenderInfo(MaterialIds.knightly);
 
     buildRenderInfo(MaterialIds.gold).color(0xFDF55F).fallbacks("metal");
     buildRenderInfo(MaterialIds.obsidian);

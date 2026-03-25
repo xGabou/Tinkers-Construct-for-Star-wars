@@ -29,7 +29,6 @@ public class TrimMaterialProvider {
   /** Registers all trim materials with the context */
   private static void registerTrimMaterials(BootstapContext<TrimMaterial> context) {
     // we set model indexes as fallbacks for when trimmed is not installed so you have at least something on vanilla models
-    material(context, MaterialIds.beskar,       TinkerMaterials.steel,       0x9AA28B, 0.8f);
     material(context, MaterialIds.cortosis,     TinkerMaterials.steel,       0x6E7C7B, 0.9f);
     material(context, MaterialIds.electrum,     Items.GOLD_INGOT,            0xF7E065, 0.1f);
     material(context, MaterialIds.alum,         Items.IRON_INGOT,            0xC9D8D8, 0.6f);

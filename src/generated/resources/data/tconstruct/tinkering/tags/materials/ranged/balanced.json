@@ -9,7 +9,6 @@
     "tconstruct:necrotic_bone",
     "tconstruct:skyslime_vine",
     "tconstruct:darkthread",
-    "tconstruct:beskar",
     "tconstruct:cast_iron",
     "tconstruct:crystal_weave",
     "tconstruct:blazing_bone",
@@ -21,18 +20,6 @@
     },
     {
       "id": "tconstruct:ironwood",
-      "required": false
-    },
-    {
-      "id": "tconstruct:nickel",
-      "required": false
-    },
-    {
-      "id": "tconstruct:constantan",
-      "required": false
-    },
-    {
-      "id": "tconstruct:brass",
       "required": false
     }
   ]

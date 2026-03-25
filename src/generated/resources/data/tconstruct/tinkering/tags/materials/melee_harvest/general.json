@@ -7,10 +7,8 @@
     "tconstruct:iron",
     "tconstruct:slimewood",
     "tconstruct:cast_iron",
-    "tconstruct:beskar",
     "tconstruct:quadranium",
     "tconstruct:electrum",
-    "tconstruct:carbonite",
     "tconstruct:enderslime_vine",
     {
       "id": "tconstruct:treated_wood",
@@ -18,14 +16,6 @@
     },
     {
       "id": "tconstruct:ironwood",
-      "required": false
-    },
-    {
-      "id": "tconstruct:nickel",
-      "required": false
-    },
-    {
-      "id": "tconstruct:brass",
       "required": false
     }
   ]

@@ -182,10 +182,6 @@ public class MaterialStatsDataProvider extends AbstractMaterialStatsDataProvider
 
     // tier 4 (mod integration)
 
-    addMaterialStats(MaterialIds.beskar,
-      new HeadMaterialStats(1400, 6.5f, NETHERITE, 2.5f),
-      HandleMaterialStats.multipliers().durability(1.2f).attackDamage(1.05f).build(),
-      StatlessMaterialStats.BINDING);
     addMaterialStats(MaterialIds.cortosis,
       new HeadMaterialStats(1100, 5.5f, NETHERITE, 4.0f),
       HandleMaterialStats.multipliers().durability(1.0f).attackDamage(1.2f).attackSpeed(0.9f).build(),
@@ -483,8 +479,6 @@ public class MaterialStatsDataProvider extends AbstractMaterialStatsDataProvider
     addMaterialStats(MaterialIds.copper,       new SkullStats(145, 2));
     addMaterialStats(MaterialIds.blazingBone,  new SkullStats(205, 1));
     addMaterialStats(MaterialIds.gold,         new SkullStats(125, 0));
-    addMaterialStats(MaterialIds.roseGold,     new SkullStats(175, 1));
-    addMaterialStats(MaterialIds.pigIron,      new SkullStats(150, 2));
     // slimesuit
     addMaterialStats(MaterialIds.enderslime, StatlessMaterialStats.REPAIR_KIT);
     addMaterialStats(MaterialIds.phantom, StatlessMaterialStats.REPAIR_KIT);
