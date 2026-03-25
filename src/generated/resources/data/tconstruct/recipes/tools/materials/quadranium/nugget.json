@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/quadranium"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/quadranium"
+  },
+  "material": "tconstruct:quadranium",
+  "needed": 9,
+  "value": 1
+}

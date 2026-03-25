@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/carbonite"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/carbonite"
+  },
+  "material": "tconstruct:carbonite",
+  "needed": 9,
+  "value": 1
+}

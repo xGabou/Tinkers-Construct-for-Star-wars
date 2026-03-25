@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/netherite"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/netherite"
+  },
+  "material": "tconstruct:titanium",
+  "needed": 9,
+  "value": 1
+}

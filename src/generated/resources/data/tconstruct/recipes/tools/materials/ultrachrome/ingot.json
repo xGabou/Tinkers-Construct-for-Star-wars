@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/ultrachrome"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/ultrachrome"
+  },
+  "material": "tconstruct:ultrachrome",
+  "needed": 1,
+  "value": 1
+}

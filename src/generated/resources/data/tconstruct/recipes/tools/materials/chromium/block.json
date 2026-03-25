@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:storage_blocks/chromium"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/chromium"
+  },
+  "leftover": {
+    "count": 1,
+    "tag": "forge:ingots/chromium"
+  },
+  "material": "tconstruct:chromium",
+  "needed": 1,
+  "value": 9
+}

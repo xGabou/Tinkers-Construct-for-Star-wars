@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/netherite"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/netherite"
+  },
+  "material": "tconstruct:titanium",
+  "needed": 1,
+  "value": 1
+}

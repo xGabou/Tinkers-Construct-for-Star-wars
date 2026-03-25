@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/ultrachrome"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/ultrachrome"
+  },
+  "material": "tconstruct:ultrachrome",
+  "needed": 9,
+  "value": 1
+}

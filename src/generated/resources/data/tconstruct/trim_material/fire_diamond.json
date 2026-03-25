@@ -1,0 +1,14 @@
+{
+  "asset_name": "tconstruct_fire_diamond",
+  "description": {
+    "color": "#FF7E44",
+    "translate": "trim_material.tconstruct.format",
+    "with": [
+      {
+        "translate": "material.tconstruct.fire_diamond"
+      }
+    ]
+  },
+  "ingredient": "minecraft:diamond",
+  "item_model_index": 0.4
+}

@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/beskar"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/beskar"
+  },
+  "material": "tconstruct:beskar",
+  "needed": 9,
+  "value": 1
+}

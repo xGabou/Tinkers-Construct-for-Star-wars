@@ -1,0 +1,24 @@
+{
+  "type": "tconstruct:material_fluid",
+  "conditions": [
+    {
+      "type": "forge:or",
+      "values": [
+        {
+          "type": "mantle:tag_filled",
+          "tag": "forge:ingots/brass"
+        },
+        {
+          "type": "mantle:tag_filled",
+          "tag": "forge:ingots/zinc"
+        }
+      ]
+    }
+  ],
+  "fluid": {
+    "amount": 90,
+    "tag": "forge:molten_brass"
+  },
+  "output": "tconstruct:brass",
+  "temperature": 605
+}

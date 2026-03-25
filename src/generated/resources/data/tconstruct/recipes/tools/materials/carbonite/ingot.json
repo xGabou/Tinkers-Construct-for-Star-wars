@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/carbonite"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/carbonite"
+  },
+  "material": "tconstruct:carbonite",
+  "needed": 1,
+  "value": 1
+}

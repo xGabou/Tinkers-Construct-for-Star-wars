@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/nickel"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/nickel"
+  },
+  "material": "tconstruct:nickel",
+  "needed": 1,
+  "value": 1
+}

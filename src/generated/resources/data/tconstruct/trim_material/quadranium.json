@@ -1,0 +1,14 @@
+{
+  "asset_name": "tconstruct_quadranium",
+  "description": {
+    "color": "#8A78D1",
+    "translate": "trim_material.tconstruct.format",
+    "with": [
+      {
+        "translate": "material.tconstruct.quadranium"
+      }
+    ]
+  },
+  "ingredient": "minecraft:amethyst_shard",
+  "item_model_index": 1.0
+}

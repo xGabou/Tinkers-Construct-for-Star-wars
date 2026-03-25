@@ -1,0 +1,14 @@
+{
+  "asset_name": "tconstruct_aurodium",
+  "description": {
+    "color": "#F4D97A",
+    "translate": "trim_material.tconstruct.format",
+    "with": [
+      {
+        "translate": "material.tconstruct.aurodium"
+      }
+    ]
+  },
+  "ingredient": "minecraft:gold_ingot",
+  "item_model_index": 0.1
+}

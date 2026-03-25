@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/chromium"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/chromium"
+  },
+  "material": "tconstruct:chromium",
+  "needed": 9,
+  "value": 1
+}
