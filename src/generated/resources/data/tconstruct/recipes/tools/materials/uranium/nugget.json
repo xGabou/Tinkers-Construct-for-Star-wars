@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/uranium"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/uranium"
+  },
+  "material": "tconstruct:uranium",
+  "needed": 9,
+  "value": 1
+}

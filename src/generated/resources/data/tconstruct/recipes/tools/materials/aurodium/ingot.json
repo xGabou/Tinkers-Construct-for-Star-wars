@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/gold"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/gold"
+  },
+  "material": "tconstruct:aurodium",
+  "needed": 1,
+  "value": 1
+}

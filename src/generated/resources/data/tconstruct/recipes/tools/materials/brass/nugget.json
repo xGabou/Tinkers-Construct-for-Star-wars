@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/brass"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/brass"
+  },
+  "material": "tconstruct:brass",
+  "needed": 9,
+  "value": 1
+}

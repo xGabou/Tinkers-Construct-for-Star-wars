@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:dusts/sulfur"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:dusts/sulfur"
+  },
+  "material": "tconstruct:sulfur",
+  "needed": 1,
+  "value": 1
+}

@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/copper"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/copper"
+  },
+  "material": "tconstruct:codoran",
+  "needed": 1,
+  "value": 1
+}

@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/beryllium"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/beryllium"
+  },
+  "material": "tconstruct:beryllium",
+  "needed": 9,
+  "value": 1
+}

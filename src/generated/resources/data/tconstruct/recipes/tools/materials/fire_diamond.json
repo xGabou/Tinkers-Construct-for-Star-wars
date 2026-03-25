@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "tag": "forge:gems/diamond"
+  },
+  "material": "tconstruct:fire_diamond",
+  "needed": 1,
+  "value": 1
+}

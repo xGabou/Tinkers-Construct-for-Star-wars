@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/chromium"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/chromium"
+  },
+  "material": "tconstruct:chromium",
+  "needed": 1,
+  "value": 1
+}

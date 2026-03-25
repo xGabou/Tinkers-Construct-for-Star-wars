@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/nickel"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/nickel"
+  },
+  "material": "tconstruct:nickel",
+  "needed": 9,
+  "value": 1
+}

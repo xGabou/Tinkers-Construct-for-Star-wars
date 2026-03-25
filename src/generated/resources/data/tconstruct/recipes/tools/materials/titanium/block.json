@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:storage_blocks/netherite"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/netherite"
+  },
+  "leftover": {
+    "count": 1,
+    "tag": "forge:ingots/netherite"
+  },
+  "material": "tconstruct:titanium",
+  "needed": 1,
+  "value": 9
+}

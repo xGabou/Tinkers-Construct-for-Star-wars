@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/alum"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/alum"
+  },
+  "material": "tconstruct:alum",
+  "needed": 1,
+  "value": 1
+}

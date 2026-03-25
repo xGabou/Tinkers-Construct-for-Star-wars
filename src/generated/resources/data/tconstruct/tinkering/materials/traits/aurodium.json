@@ -1,0 +1,18 @@
+{
+  "perStat": {
+    "tconstruct:skull": [
+      {
+        "level": 1,
+        "name": "tconstruct:gold_guard"
+      },
+      {
+        "level": 1,
+        "name": "tconstruct:piglin_brute_disguise"
+      },
+      {
+        "level": 1,
+        "name": "tconstruct:golden"
+      }
+    ]
+  }
+}

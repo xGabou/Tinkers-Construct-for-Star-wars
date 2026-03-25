@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:storage_blocks/quadranium"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/quadranium"
+  },
+  "leftover": {
+    "count": 1,
+    "tag": "forge:ingots/quadranium"
+  },
+  "material": "tconstruct:quadranium",
+  "needed": 1,
+  "value": 9
+}

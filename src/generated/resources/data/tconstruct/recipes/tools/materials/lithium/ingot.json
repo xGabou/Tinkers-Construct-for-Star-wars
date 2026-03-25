@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/lithium"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/lithium"
+  },
+  "material": "tconstruct:lithium",
+  "needed": 1,
+  "value": 1
+}

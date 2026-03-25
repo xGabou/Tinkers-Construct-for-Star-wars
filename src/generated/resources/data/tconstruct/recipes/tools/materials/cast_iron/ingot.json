@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/cast_iron"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/cast_iron"
+  },
+  "material": "tconstruct:cast_iron",
+  "needed": 1,
+  "value": 1
+}

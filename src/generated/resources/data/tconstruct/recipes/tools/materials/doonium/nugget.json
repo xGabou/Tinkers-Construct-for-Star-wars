@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/doonium"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/doonium"
+  },
+  "material": "tconstruct:doonium",
+  "needed": 9,
+  "value": 1
+}

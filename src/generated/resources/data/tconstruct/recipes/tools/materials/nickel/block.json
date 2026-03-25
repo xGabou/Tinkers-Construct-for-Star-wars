@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:storage_blocks/nickel"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/nickel"
+  },
+  "leftover": {
+    "count": 1,
+    "tag": "forge:ingots/nickel"
+  },
+  "material": "tconstruct:nickel",
+  "needed": 1,
+  "value": 9
+}

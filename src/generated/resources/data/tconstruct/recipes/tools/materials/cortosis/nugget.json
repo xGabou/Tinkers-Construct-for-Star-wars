@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/cortosis"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/cortosis"
+  },
+  "material": "tconstruct:cortosis",
+  "needed": 9,
+  "value": 1
+}

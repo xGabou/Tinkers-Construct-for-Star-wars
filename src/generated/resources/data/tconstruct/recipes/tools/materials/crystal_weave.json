@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:gems/emerald"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:gems/emerald"
+  },
+  "material": "tconstruct:crystal_weave",
+  "needed": 1,
+  "value": 1
+}

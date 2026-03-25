@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material_fluid",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/uranium"
+    }
+  ],
+  "fluid": {
+    "amount": 90,
+    "tag": "forge:molten_uranium"
+  },
+  "output": "tconstruct:uranium",
+  "temperature": 830
+}

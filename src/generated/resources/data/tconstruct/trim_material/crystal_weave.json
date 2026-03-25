@@ -1,0 +1,14 @@
+{
+  "asset_name": "tconstruct_crystal_weave",
+  "description": {
+    "color": "#58C78A",
+    "translate": "trim_material.tconstruct.format",
+    "with": [
+      {
+        "translate": "material.tconstruct.crystal_weave"
+      }
+    ]
+  },
+  "ingredient": "minecraft:emerald",
+  "item_model_index": 0.7
+}

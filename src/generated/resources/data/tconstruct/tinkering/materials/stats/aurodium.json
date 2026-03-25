@@ -1,0 +1,20 @@
+{
+  "stats": {
+    "tconstruct:binding": {},
+    "tconstruct:handle": {
+      "durability": -0.3,
+      "melee_damage": 0.0,
+      "melee_speed": 0.1,
+      "mining_speed": 0.15
+    },
+    "tconstruct:head": {
+      "durability": 220,
+      "melee_attack": 1.0,
+      "mining_speed": 9.0,
+      "mining_tier": "minecraft:gold"
+    },
+    "tconstruct:skull": {
+      "durability": 175
+    }
+  }
+}

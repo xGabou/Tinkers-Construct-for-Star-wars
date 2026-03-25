@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:storage_blocks/cast_iron"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/cast_iron"
+  },
+  "leftover": {
+    "count": 1,
+    "tag": "forge:ingots/cast_iron"
+  },
+  "material": "tconstruct:cast_iron",
+  "needed": 1,
+  "value": 9
+}
